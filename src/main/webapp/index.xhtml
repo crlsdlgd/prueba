@@ -7,8 +7,19 @@
         <h:outputStylesheet library="css" name="style.css"/>
     </h:head>
     <h:body>
-        <h1>Hello from Facelets</h1>
-        <br />
+        <div id="imagenCabecera">
+            <h2>Sistema de Titulación</h2>   
+            <style>
+                div{
+                    background-image: url(resources/images/plantillaPie.png);
+                    height: 79px;
+                    background-repeat: no-repeat;
+                }
+            </style>
+        </div>
+        <div id="imagenCabecera2">
+            <h4>UNIVERSIDAD CENTRAL DEL ECUADOR</h4>     
+        </div>
         <h:link outcome="welcomePrimefaces" value="Primefaces welcome page" />
     </h:body>
 </html>

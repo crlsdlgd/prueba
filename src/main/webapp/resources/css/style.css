@@ -12,3 +12,17 @@ h1{
     font-family: 'Open Sans';
     font-size: 18px;
 }
+h2,h4{
+    font-family: 'Open Sans';
+    font-size: 18px;
+}
+#imagenCabecera{
+    background:url(../images/plantillaCabecera.png);
+    width: 300px;
+    color: red;
+}
+
+
+div{
+    background:url(../images/plantillaCabecera.png);
+}
