@@ -1,12 +1,7 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 07/07/2020, 21:16:58
-    Author     : Eilfil
-*/
+*{
+    margin: 0;
+    padding: 0;
+}
 
 h1{
     font-family: 'Open Sans';
@@ -16,13 +11,13 @@ h2,h4{
     font-family: 'Open Sans';
     font-size: 18px;
 }
-#imagenCabecera{
-    background:url(../images/plantillaCabecera.png);
-    width: 300px;
-    color: red;
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
 }
-
-
-div{
-    background:url(../images/plantillaCabecera.png);
+.textoEncima{
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }

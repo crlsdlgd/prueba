@@ -5,20 +5,30 @@
     <h:head>
         <title>Facelet Title</title>
         <h:outputStylesheet library="css" name="style.css"/>
+        <style>
+            #imagenCabecera{
+                background-image: url(resources/images/plantillaCabecera.png);
+                height: auto;
+                width: 100%;
+                background-repeat: no-repeat;
+            }
+            #imagenPie{
+                background-image: url(resources/images/plantillaPie.png);                   
+                height: auto;
+                width: 100% !important;
+                background-repeat: no-repeat;
+            }
+        </style>
     </h:head>
     <h:body>
         <div id="imagenCabecera">
             <h2>Sistema de Titulación</h2>   
-            <style>
-                div{
-                    background-image: url(resources/images/plantillaPie.png);
-                    height: 79px;
-                    background-repeat: no-repeat;
-                }
-            </style>
-        </div>
-        <div id="imagenCabecera2">
             <h4>UNIVERSIDAD CENTRAL DEL ECUADOR</h4>     
+        </div>
+        
+        <div class="contenedor"> 
+            <img class="myFooter" src="resources/images/plantillaPie.png" style="height: auto; width: 100%;" />
+            <div class="textoEncima">Copyright UCE</div>
         </div>
         <h:link outcome="welcomePrimefaces" value="Primefaces welcome page" />
     </h:body>
