@@ -1,36 +1,29 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html">
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
     <h:head>
         <title>Facelet Title</title>
         <h:outputStylesheet library="css" name="style.css"/>
-        <style>
-            #imagenCabecera{
-                background-image: url(resources/images/plantillaCabecera.png);
-                height: auto;
-                width: 100%;
-                background-repeat: no-repeat;
-            }
-            #imagenPie{
-                background-image: url(resources/images/plantillaPie.png);                   
-                height: auto;
-                width: 100% !important;
-                background-repeat: no-repeat;
-            }
-        </style>
     </h:head>
     <h:body>
-        <div id="imagenCabecera">
-            <h2>Sistema de Titulación</h2>   
-            <h4>UNIVERSIDAD CENTRAL DEL ECUADOR</h4>     
+        <div id="wrapper" >
+            <div id="header"> 
+                <img class="myHeader" src="resources/images/plantillaCabecera.png" style="height: auto; width: 100%;" />
+                <div class="textoEncima" style="text-align: right;"><h2>Sistema de Titulación</h2></div>
+            </div>
+        
+
+        
+            <div id="footer"> 
+                <img class="myFooter" src="resources/images/plantillaPie.png" style="height: auto; width: 100%;" />
+                <div class="textoEncima" style="color: white;">Copyright UCE</div>
+            </div>
         </div>
         
-        <div class="contenedor"> 
-            <img class="myFooter" src="resources/images/plantillaPie.png" style="height: auto; width: 100%;" />
-            <div class="textoEncima">Copyright UCE</div>
-        </div>
         <h:link outcome="welcomePrimefaces" value="Primefaces welcome page" />
+        
     </h:body>
 </html>
 

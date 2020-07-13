@@ -2,14 +2,20 @@
     margin: 0;
     padding: 0;
 }
-
-h1{
-    font-family: 'Open Sans';
-    font-size: 18px;
+#header{
+    top: 0;
+    position:fixed;
 }
+#footer{
+    bottom: 0;
+    position:fixed;
+} 
+
 h2,h4{
     font-family: 'Open Sans';
     font-size: 18px;
+    color: white;
+
 }
 .contenedor{
     position: relative;
@@ -20,4 +26,9 @@ h2,h4{
     position: absolute;
     top: 10px;
     left: 10px;
+}
+#wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
