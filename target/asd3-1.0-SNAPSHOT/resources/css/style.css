@@ -11,24 +11,38 @@
     position:fixed;
 } 
 
-h2,h4{
-    font-family: 'Open Sans';
-    font-size: 18px;
-    color: white;
-
+.container{
+    width: 80%;
+    margin: 0 auto; /* Center the DIV horizontally */
+    position: fixed;
 }
-.contenedor{
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-.textoEncima{
+.textoTitle{
     position: absolute;
-    top: 10px;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 28px;
+    color: white;
+    left: 75%; /* X */
+    top: 30%; /* Y */
+}
+.textoSubTitle{
+    position: absolute;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 21px;
+    color: white;
+    left: 65%; /* X */
+    top: 60%; /* Y */
+}
+.textoFooter{
+    position: absolute;
+    font-family: 'Open Sans',sans-serif;
+    top: 30%;
     left: 10px;
 }
-#wrapper {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+
+#container{
+    margin:0 auto;
+    overflow:auto;
+    padding:139px 0;
+    width:940px;
+    position: fixed;
 }
