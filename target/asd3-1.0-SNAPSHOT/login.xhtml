@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+    <f:view contentType="text/html">
+        <h:head>
+            <f:facet name="first">
+                <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
+                <title>Login</title>
+            </f:facet>
+        </h:head>
+
+        <h:body>
+            <ui:decorate template="template.xhtml"></ui:decorate>
+            <div class="container">
+                <h:form>
+                    <p:menubar autoDisplay="false">
+                        <p:submenu label="File">
+                            <p:submenu label="New">
+                                <p:menuitem value="Project" url="#"/>
+                                <p:menuitem value="Other" url="#"/>
+                            </p:submenu>
+                            <p:menuitem value="Open" url="#"></p:menuitem>
+                            <p:menuitem value="Quit" url="#"></p:menuitem>
+                        </p:submenu>
+                        <p:submenu label="Edit">
+                            <p:menuitem value="Undo" url="#"></p:menuitem>
+                            <p:menuitem value="Redo" url="#"></p:menuitem>
+                        </p:submenu>
+                        <p:submenu label="Help">
+
+                            <p:submenu label="Search">
+                                <p:submenu label="Text">
+                                    <p:menuitem value="Workspace" url="#" />
+                                </p:submenu>
+                                <p:menuitem value="File" url="#" />
+                            </p:submenu>
+                        </p:submenu>
+                         <p:menuitem value="Quit" url="#" />
+                    </p:menubar>
+                </h:form>
+            </div>
+ 
+        </h:body>
+
+    </f:view>
+</html>
+
