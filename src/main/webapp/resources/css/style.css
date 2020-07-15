@@ -16,7 +16,10 @@
 .container{
     width: 100%;
     margin: 0 auto; /* Center the DIV horizontally */
+}
 
+.centrar{
+    text-align: center;  
 }
 .textoTitle{
     position: absolute;
@@ -41,3 +44,6 @@
     left: 10px;
 }
 
+.login{
+    text-align: center;
+}

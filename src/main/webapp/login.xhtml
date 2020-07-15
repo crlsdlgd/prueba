@@ -7,6 +7,7 @@
 
     <f:view contentType="text/html">
         <h:head>
+            <h:outputStylesheet library="css" name="style.css"/>
             <f:facet name="first">
                 <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
                 <title>Login</title>
@@ -17,33 +18,16 @@
             <ui:decorate template="template.xhtml"></ui:decorate>
             <div class="container">
                 <h:form>
-                    <p:menubar autoDisplay="false">
-                        <p:submenu label="File">
-                            <p:submenu label="New">
-                                <p:menuitem value="Project" url="#"/>
-                                <p:menuitem value="Other" url="#"/>
-                            </p:submenu>
-                            <p:menuitem value="Open" url="#"></p:menuitem>
-                            <p:menuitem value="Quit" url="#"></p:menuitem>
-                        </p:submenu>
-                        <p:submenu label="Edit">
-                            <p:menuitem value="Undo" url="#"></p:menuitem>
-                            <p:menuitem value="Redo" url="#"></p:menuitem>
-                        </p:submenu>
-                        <p:submenu label="Help">
-
-                            <p:submenu label="Search">
-                                <p:submenu label="Text">
-                                    <p:menuitem value="Workspace" url="#" />
-                                </p:submenu>
-                                <p:menuitem value="File" url="#" />
-                            </p:submenu>
-                        </p:submenu>
-                         <p:menuitem value="Quit" url="#" />
-                    </p:menubar>
+                    <div class="centrar">                  
+                        <p:inputText class="centrar" value="#{basicView.text}" placeholder="Usuario"/> 
+                        <br/>
+                        <p:password class="centrar" value="#{basicView.text}" placeholder="Contraseña" />
+                        <br/>
+                        <p:commandButton value="Ingresar" action="homeDocente.xhtml" />                        
+                    </div>
                 </h:form>
             </div>
- 
+
         </h:body>
 
     </f:view>
